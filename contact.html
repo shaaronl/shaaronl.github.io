@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <title>Contact</title>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.min.css"/>
+    </head>
     <body>
         <nav class="navbar">
-            <h1 class="logo"><a href="index.html">SHARON LIANG</a></h1>
+            <h1 class="logo">
+                <a href="index.html">
+                    sharon liang
+                    <img src="assets/profile-images/sstrawberry.png" width="20" height="20" alt="strawberry">
+                </a>
+            </h1>
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -15,6 +22,7 @@
         </nav>
         <main>
             <h1 class="page-title">Contact</h1>
+            <p id="app"></p>
             <form id="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="Name" required>
@@ -22,9 +30,10 @@
                 <input type="email" id="email" name="Email" required>
                 <label for="message">Message</label>
                 <textarea></textarea>
-                <input type="submit"/>
+                <input type="submit" value="Submit" />
             </form>
         </main>
-        <footer class="footer">© 2024 <Personal Website Name> | All Rights Reserved</footer>
-    </body>
+        <footer class="footer">© 2024 Sharon's Personal Website | All Rights Reserved</footer>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="scripts/form-script.js"></script>
 </html>
