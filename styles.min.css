@@ -1,0 +1,305 @@
+:root {
+  /* variables */
+  --cg-black: rgb(25, 26, 26);
+  --cg-matcha: 	rgb(139, 168, 136);
+  --cg-darkgreen: rgb(38, 67, 38);
+  --cg-grey: rgb(243, 243, 243);
+  --cg-white: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+}
+
+body{
+	background-color: white;
+  position: relative;
+	color: #575757;
+  min-height: 100vh;
+	font-family: nobel, sans-serif;
+	font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+	font-family: nobel, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  margin: 30px;
+}
+
+p {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-family: nobel, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: var(--cg-matcha);
+	transition: 0.3s;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for navigation bar */
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--cg-matcha);
+  color: white;
+  padding: 0px 0px;
+
+  /* Debug border */
+  /* border: solid red; */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: nobel, sans-serif;
+  
+}
+.navbar a:link{
+  color: white;
+}
+.navbar a:hover{
+  color: var(--cg-darkgreen);
+}
+.logo img{
+  border-radius: 100px;
+}
+.logo a {
+  color: rgb(38, 67, 38);
+}
+.logo a:hover {
+  color: white;
+}
+
+/* CSS for home page */
+
+.about {
+  padding: 5%;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.about-image {
+  flex: 1; 
+  max-width: 600px; 
+  margin-right: 100px;
+}
+
+.about-text {
+  max-width: 600px;
+  padding: 10px;
+}
+
+.about h1{
+  font-size: 80px;
+}
+#app {
+	font-size: 20px;
+  color: var(--cg-matcha);
+}
+
+/* CSS for portfoliio page */
+.project {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 20px auto; 
+  max-width: 400px; 
+  background-color: #fff; 
+  border-radius: 8px;
+  padding: 15px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%; 
+  border-radius: 8px; 
+}
+
+.project-details {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.project-name {
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.project-description {
+  margin-bottom: 10px; 
+}
+/* .project-description .tech-stack{
+  font-size: 10px;
+} */
+.project a {
+  text-decoration: none; 
+  color: var(--cg-matcha); 
+  font-weight: bold;
+}
+.project a:hover{
+  color: var(--cg-darkgreen);
+}
+
+/* CSS for blog page */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 0 20px; 
+}
+
+.dish {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 20px auto; 
+  max-width: 400px; 
+  background-color: #fff; 
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+  width: 100%; 
+  max-width: 300px;
+  max-height: auto;
+  border-radius: 8px; 
+}
+
+.dish-details {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.dish-name {
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.dish-description {
+  margin-bottom: 10px; 
+}
+
+.dish a {
+  text-decoration: none; 
+  color: var(--cg-matcha); 
+  font-weight: bold;
+}
+.dish a:hover{
+  color: var(--cg-darkgreen);
+}
+
+
+/* CSS for resume page */
+
+.resume {
+  width: 100%; 
+  max-width: 800px; 
+  margin-left: 180px; 
+  margin-top: 40px;
+  padding: 40px;
+  border: 2px dashed var(--cg-matcha); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transform: scale(0.8); 
+  transform-origin: top left; 
+}
+
+.resume h2 {
+  font-family: Georgia;
+}
+.resume-button a {
+  color: yellow;
+}
+
+a:hover {
+  color: var(--cg-darkgreen);
+}
+
+/* CSS for contact form */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input[type=submit] {
+  padding:5px 15px; 
+  background:rgba(156, 187, 166, 0.2); 
+  border:0 none;
+  cursor:pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* CSS for footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cg-matcha);
+  color: var(--cg-white);
+  font-family: nobel, sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
