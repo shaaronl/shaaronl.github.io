@@ -2,21 +2,104 @@
 <html>
     <head>
         <title>Blog</title>
+        <link rel="stylesheet" href="styles.min.css"/>
     </head>
     <body>
         <nav class="navbar">
-            <h1 class="logo"><a href="index.html">SHARON LIANG</a></h1>
+            <h1 class="logo">
+                <a href="index.html">
+                    sharon liang
+                    <img src="assets/profile-images/sstrawberry.png" width="20" height="20" alt="strawberry">
+                </a>
+            </h1>
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <main>
-            <h1 class="page-title">Blog</h1>
+            <h1 class="page-title">Cooking Blog</h1>
+            <p id="app"></p>
+            <div class="grid">
+                <div class="dish">
+                    <a href="https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/"><img src="assets/cooking-images/bibimbap.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>bibimbap!</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>super easy to make</p>
+                        </div>
+                        <a href="https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/">recipe</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <a href="https://tastesbetterfromscratch.com/fresh-spring-rolls/"><img src="assets/cooking-images/spingrolls.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>spring rolls</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>perfect 4 summer</p>
+                        </div>
+                        <a href="https://tastesbetterfromscratch.com/fresh-spring-rolls/">recipe</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <a href="https://hot-thai-kitchen.com/pineapple-fried-rice/"><img src="assets/cooking-images/pineapple.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>pineapple fried rice</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>super fun to make the bowl</p>
+                        </div>
+                        <a href="https://hot-thai-kitchen.com/pineapple-fried-rice/">recipe</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <a href="https://www.deartea.co/product-page/matcha-isuzu-40g"><img src="assets/cooking-images/matcha.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>matcha</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>i love matcha</p>
+                        </div>
+                        <a href="https://www.deartea.co/product-page/matcha-isuzu-40g">recipe</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <a href="blog.html"><img src="assets/cooking-images/curry.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>miffy curry rice</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>˚ʚ♡ɞ˚</p>
+                        </div>
+                        <a href="blog.html">recipe</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <a href="blog.html"><img src="assets/cooking-images/bokchoy.png" width="300" alt="temp"></a>
+                    <div class="dish-details">
+                        <div class="dish-name">
+                            <p><strong>白菜 (bokchoy)</strong></p>
+                        </div>
+                        <div class="dish-description">
+                            <p>好吃</p>
+                        </div>
+                        <a href="blog.html">recipe</a>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer class="footer">© 2024 <Personal Website Name> | All Rights Reserved</footer>
+        <footer class="footer">© 2024 Sharon's Personal Website | All Rights Reserved</footer>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="scripts/cooking-script.js"></script>
     </body>
 </html>
