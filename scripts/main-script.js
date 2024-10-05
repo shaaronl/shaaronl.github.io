@@ -17,7 +17,7 @@ typewriter
   .pauseFor(1000)
   .deleteAll()
   .pauseFor(500)
-  .typeString("Im sharon!")
+  .typeString("I'm sharon!")
   .pauseFor(1000)
   .deleteAll()
   .pauseFor(500)
